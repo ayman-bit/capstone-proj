@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "capstone-proj",
+    "slug": "capstone-proj",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "capstone-proj"
+}
