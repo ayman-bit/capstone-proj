@@ -1,12 +1,12 @@
 import React from "react";
-import {View, Text, StyleSheet, Pressable } from "react-native";
+import {View, Text, StyleSheet, Pressable, Alert} from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import {StatusBar} from "expo-status-bar";
 
-const CustomButton = ({onPess, text, type = "PRIMARY", bgColor, fgColor}) => {
+const CustomButton = ({onPressFunction, text, type = "PRIMARY", bgColor, fgColor}) => {
   return(
       <Pressable
-          onPess={onPess}
+          onPress={onPressFunction}
           style={[
               styles.container,
               styles[`container_${type}`],
