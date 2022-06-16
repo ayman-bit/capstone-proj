@@ -17,17 +17,16 @@ const LoginScreen = () => {
     };
 
     const onSignInApple = () => {
+        Alert.alert("Yeep");
         console.warn('Sign in');
+        navigation.navigate('Home');
     };
 
     const onSignInFacebook = () => {
+        Alert.alert("Yeep");
         console.warn('Sign in');
+        navigation.navigate('Home');
     };
-
-    const onSignInGithub = () => {
-        console.warn('Sign in');
-    };
-
 
     const {height} = useWindowDimensions();
     return (
@@ -55,12 +54,6 @@ const LoginScreen = () => {
                     onPressFunction={onSignInFacebook}
                     bgColor="#E7EAF4"
                     fgColor="#4765A9"
-                />
-                <CustomButton
-                    text="Sign in with Github"
-                    onPressFunction={onSignInGithub}
-                    bgColor="#A7FFE5"
-                    fgColor="#FFFFFF"
                 />
 
                 {/*<CustomInput/>*/}
